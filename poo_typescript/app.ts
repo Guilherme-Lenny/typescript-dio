@@ -106,7 +106,7 @@ console.log(account)
 // Classe Abstrata: Uma classe abstrata é um tipo especial de classe em programação que não pode ser instanciada por si só. Em vez disso, ela serve como uma base para outras classes. Pense nela como um modelo ou uma blueprint que define métodos e propriedades comuns, mas deixa a implementação específica desses métodos para as subclasses que a herdam.
 abstract class DioAccount {
     private name: string
-    accountNumber: number
+    private readonly accountNumber: number
     balance: number = 0
     private status: boolean = true
 
@@ -249,3 +249,10 @@ E uma função de validação para que execute dentro de sua classe
         throw Error('Conta inválida')
     }
 */
+
+// 6- Readonly
+/*
+O operador readonly no TypeScript é utilizado para marcar propriedades de um objeto como somente leitura. Isso significa que uma vez que o valor da propriedade é atribuído, ele não pode ser modificado. Isso é útil para garantir a imutabilidade de objetos, ajudando a evitar alterações acidentais nos valores das propriedades.
+*/
+
+//Obs: Cada função terá uma única responsabilidade
